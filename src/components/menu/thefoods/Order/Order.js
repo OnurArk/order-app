@@ -4,7 +4,6 @@ import styled from "./Order.module.css";
 const Order = (props) => {
   const [count, setCount] = useState(0);
   const [totalPrice, setTotalPrice] = useState();
-  const [orderedItems, setOrderedItems] = useState([]);
 
   useEffect(() => {
     setTotalPrice(props.price * count);
@@ -22,10 +21,10 @@ const Order = (props) => {
   };
 
   const submition = () => {
-    setOrderedItems((pre) => {
-      return [...pre, { Name: props.name, Count: count, Price: totalPrice }];
-    });
-    props.info(orderedItems);
+    if (count !== 0) {
+      props.info(count, totalPrice, props.name, props.id);
+    }
+
     setCount(0);
   };
   return (
