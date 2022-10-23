@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: fixed;
+  width: 100%;
+  height: 5rem;
+  background-color: brown;
+  padding: 0.6rem;
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.brand {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-left: 6rem;
+}
+
+.brand h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.myOrders {
+  display: flex;
+  background-color: rgba(41, 41, 41, 0.676);
+  align-items: center;
+  height: 3rem;
+  width: 13rem;
+  border-radius: 350px;
+  margin-right: 100px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.myOrders i {
+  margin: auto 1rem;
+}
+
+.sayac {
+  display: inline-block;
+  background-color: brown;
+  height: 2rem;
+  width: 2.3rem;
+  margin: 0 0 0 1.2rem;
+  border-radius: 0.9rem;
+}

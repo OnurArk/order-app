@@ -1,0 +1,17 @@
+.brand {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-left: 6rem;
+  font-size: 1.2rem;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 5px 4px 6px black;
+  cursor: pointer;
+}
+
+.brand:hover {
+  font-size: 1.3rem;
+  margin-left: 5.6rem;
+}

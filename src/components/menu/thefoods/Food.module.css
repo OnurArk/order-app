@@ -1,0 +1,23 @@
+.foodListContainer {
+  display: flex;
+  align-content: center;
+  gap: 20px;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 20px;
+  border: 2px black solid;
+
+  line-height: 30px;
+}
+
+.imges {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+
+.foodNames {
+  display: block;
+  height: fit-content;
+  margin: auto;
+}

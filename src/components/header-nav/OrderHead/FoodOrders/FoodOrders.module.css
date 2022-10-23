@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.781);
+  z-index: 10;
+}
+.orderList {
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: 500px;
+  min-width: 500px;
+  border-radius: 30px;
+  z-index: 20;
+  padding: 30px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eachList {
+  display: flex;
+  justify-content: left;
+  padding: 20px;
+  background: rgb(19, 31, 139);
+  color: white;
+  border-bottom: 2px solid rgb(44, 1, 213);
+  border-radius: 0 20px;
+  box-shadow: 4px 10px 12px rgb(19, 31, 139);
+  transition: all 0.4s ease-in-out;
+}
+
+.eachList:hover,
+.eachList:focus {
+  box-shadow: 2px 4px 4px rgb(18, 27, 104);
+}
+
+.Name-Food {
+  display: inline-block;
+}
+.Price {
+  display: inline-block;
+  margin: auto;
+}
